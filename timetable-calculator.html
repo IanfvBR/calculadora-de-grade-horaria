@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Calculadora de Grade Horária</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./styles/timetable-calculator.css">
+    </head>
+
+    <body>
+        <div id="subjects-input">
+            <div>
+                <h1>Calculadora de Grade Horaria</h1>
+                <p>
+                    Insira as opções de disciplina e turmas que desejas cursar, a quantidade máxima que
+                     quer cursar, e então clique no botão "calcular possibilidades".
+                </p>
+                <h2>Legenda:</h2>
+                <p>
+                    O código do horário deve seguir o estilo do sistema SIGAA:
+                    <br>&bullet; Dias + Turno + Horas
+                    <br> Sendo:
+                    <br>&bullet; Dias: números de 2 a 6 (segunda à sexta)
+                    <br>&bullet; Turno: M, T ou N (manhã, tarde ou noite)
+                    <br>&bullet; Horas: números de 1 a 6 (turno da noite só vai até o quarto horário)
+                    <br>&bullet; Exemplo: Matemática Turma 1 24M56
+                     (segunda e quarta, turno da manhã, horários M5 e M6)
+                </p>
+            </div>
+
+            <div name="subject-input">
+                <form id="subject-input-header">
+                    <label>Disciplina: </label>
+                    <input type="text" required="true">
+                    <input type="submit" name="submit" id="subject-submit" value="+">
+                </form>
+                <form id="calculate-possibilities">
+                    <label>Quantidade desejada: </label>
+                    <input type="number" name="size" id="size" required="true" min="0">
+                    <input type="submit" name="calculate-possibilities" value="Calcular Possibilidades">
+                </form>
+            </div>
+        </div><br>
+
+        <div id="timetable-calculator">
+
+        </div>
+
+        <script src="./scripts/conflict-manager.js" type="module"></script>
+        <script src="./scripts/timetable-calculator.js" type="module"></script>
+    </body>
+</html>

@@ -1,0 +1,148 @@
+body {
+    background-color: mintcream;
+}
+
+
+#subjects-input {
+    width: 90%;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+#subjects-input > div:first-child {
+    background-color: #dcdef5;
+    border: 1px solid black;
+    padding-inline: 2%;
+    margin-bottom: 1%;
+}
+
+#timetable-calculator {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid black;
+    background-color: #dcdef5;
+    padding: 2%;
+    visibility: hidden;
+    flex-direction: column;
+}
+
+table, tr, th, td {
+    border-collapse: collapse;
+}
+
+
+table {
+    table-layout: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    display: inline-table;
+    background-color: lightgray;
+}
+
+
+caption {
+    border: 1px solid black;
+    background-color: darkblue;
+    color: white;
+}
+
+td, th {
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word;
+    border: 1px solid black;
+}
+
+th {
+    background-color: beige;
+}
+
+td {
+    background-color: white;
+}
+
+.blank-row > td {
+    background-color: lightgray;
+    border: none;
+}
+
+.shift-N > tr:nth-last-child(-n + 3) {
+    visibility: collapse;
+}
+
+div[name="subject-input"] > form {
+    border-top: 1px solid black;
+}
+
+#subject-input-header {
+    display: flex;
+    background-color: lightgray;
+}
+
+#subject-input-header > input[type="submit"] {
+    justify-self: flex-end;
+    margin-left: auto;
+}
+
+div[name="subject-input"] > form > form {
+    display: block;
+}
+
+
+div[name="subject-input"] {
+    border: 1px solid black;
+    display: block;
+    width: fit-content;
+    justify-content: center;
+    margin: auto;
+}
+
+div[name="subject-input"] > form:nth-child(even) {
+    background-color: beige;
+}
+
+div[name="subject-input"] > form:nth-child(odd) {
+    background-color: lightsteelblue;
+}
+
+input, label {
+    margin: 4px;
+}
+
+form > input[type="number"] {
+    width: 3em;
+}
+
+.new-subject {
+    display: flex;
+}
+
+.new-subject > label {
+    font-size: large;
+    font-weight: bold;
+}
+
+.new-class-button {
+    justify-self: flex-end;
+    margin-left: auto;
+}
+
+.new-subject > form > form{
+    flex: 0 0 auto;
+    width: fit-content;
+    align-self: flex-start;
+}
+
+#calculate-possibilities {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0;
+    margin: 0;
+}
