@@ -1,4 +1,5 @@
 <h1>Documentação</h1>
+<a href="https://ianfvbr.github.io/calculadora-de-grade-horaria/timetable-calculator.html">link para a calculadora de grade horária</a>
 <h2>Descrição</h2>
  <p>
   Este projeto se trata de uma página HTML que utiliza Javascript para calcular todas as formas de montar uma grade horária.
